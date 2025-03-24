@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -12,6 +12,10 @@ import CanvasLoader from "../layout/Loader";
 
 const Ball = (props: any) => {
   const [decal] = useTexture([props.imgUrl]);
+
+  useEffect(() => {  
+    decal.flipY = false;
+  }, [decal]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -39,6 +43,8 @@ const Ball = (props: any) => {
 };
 
 const BallCanvas: React.FC<{ icon: string }> = ({ icon }) => {
+
+  
   return (
     <Canvas
       frameloop="demand"
