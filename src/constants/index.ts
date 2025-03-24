@@ -168,7 +168,7 @@ const projects: TProject[] = [
       },
     ],
     image: fraudSystem,
-    sourceCodeLink: "https://github.com/",
+    // sourceCodeLink: "https://github.com/",
   },
   {
     name: "Business Intelligence Dashboard",
@@ -189,7 +189,7 @@ const projects: TProject[] = [
       },
     ],
     image: biDashboard,
-    sourceCodeLink: "https://github.com/",
+    // sourceCodeLink: "https://github.com/",
   },
   {
     name: "Revenue Assurance Automation",
@@ -210,7 +210,7 @@ const projects: TProject[] = [
       },
     ],
     image: revenueAutomation,
-    sourceCodeLink: "https://github.com/",
+    // sourceCodeLink: "https://github.com/",
   },
 ];
 

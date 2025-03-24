@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <section className={`relative mx-auto h-screen w-full`}>
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 ">
         <ComputersCanvas />
       </div>
 
